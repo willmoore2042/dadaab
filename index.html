@@ -4,10 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Mobile app HTML landing page template to help you build a great online presence for your app which will convert visitors into users">
-    <meta name="author" content="Inovatik">
-
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
 	<meta property="og:site_name" content="" /> <!-- website name -->
 	<meta property="og:site" content="" /> <!-- website link -->
@@ -19,6 +15,23 @@
 
     <!-- Website Title -->
     <title>Dadaab</title>
+
+    <!-- Website count -->
+    <body>
+
+        <h1 style= "color: black;" >This page got<span id="visits"></span> view.</h1>
+
+    </body>
+
+
+    <script async src="https://api.countapi.kyz/hit/dadaab.online/test.visits?callback=visitscallback"></script>
+
+    <script>
+        function visitscallback(respons){
+            document.getElementById('visits').innerText = respons.value;
+        }
+    </script>
+
     
     <!-- Styles -->
 
