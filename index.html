@@ -18,14 +18,20 @@
 
     <!-- Website count -->
 
-    <script async src="https://api.countapi.xyz/hit/dadaab.online/visits?callback=visitscallback"></script>
-
     <script>
-        function visitscallback(respons){
-            document.getElementById('visits').innerText = respons.value;
-        }
+       function callN(response) {
+    document.getElementById('visits').innerText = response.value;
+    }
     </script>
 
+
+    <script async src="https://api.countapi.xyz/hit/dadaab.online/visits?callback=callN"></script>
+   
+   
+
+      
+
+       
     
     <!-- Styles -->
 
